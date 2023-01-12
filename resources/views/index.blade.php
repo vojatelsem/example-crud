@@ -3,7 +3,7 @@
 
 @section('content')
     <a class="btn btn-primary" role="button" href="{{ route('users.create') }}">Create user</a>
-    <table class="table">
+    <table class="table table-sm">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -31,4 +31,6 @@
         @endforeach
         </tbody>
     </table>
+
+    <div>{{ $users->links() }}</div>
 @endsection
